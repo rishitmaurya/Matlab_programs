@@ -1,0 +1,12 @@
+close all; clear all  clc;
+theta = linspace(0,2*pi);
+x=cos(theta); y=sin(theta);
+plot(x,y);
+axis equal;
+axis([-1.1 1.1 -1.1 1.1]);
+ax=gca;
+ax.XTick=[-1 -0.5 0 0.5];
+ax.YTick=[-1 -0.5 0 0.5];
+xlabel('$x$','Interpreter','latex','FontSize',14);
+ylabel('$x$','Interpreter','latex','FontSize',14);
+title('Plot of a circle','Interpreter','latex','FontSize',14);
